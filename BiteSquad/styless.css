@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+
+:root {
+  --primary: #ec994b;
+  --white: #ffffff;
+  --bg: #f5f5f5;
+}
+
+
+.slider_container {
+  max-width: 110rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.slider_container .swiper-wrapper {
+  width: 40rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 3rem;
+  color: var(--primary);
+  padding: 2rem 0;
+}
+
+#tranding {
+  padding: 4rem 0;
+}
+
+@media (max-width:1440px) {
+  #tranding {
+    padding: 7rem 0;
+  }
+}
+
+#tranding .tranding-slider {
+  height: 52rem;
+  padding: 2rem 0;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  #tranding .tranding-slider {
+    height: 45rem;
+  }
+}
+
+.tranding-slide {
+  width: 37rem;
+  height: 42rem;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  .tranding-slide {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+
+  .tranding-slide .tranding-slide-img img {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+}
+
+.tranding-slide .tranding-slide-img img {
+  width: 37rem;
+  height: 42rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.tranding-slide .tranding-slide-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tranding-slide-content .food-price {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: var(--white);
+}
+
+.tranding-slide-content .tranding-slide-content-bottom {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: var(--white);
+}
+
+.food-rating {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.rating ion-icon {
+  color: var(--primary);
+
+}
+
+.rating {
+  display: flex;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.tranding-slider-control {
+  position: relative;
+  margin-top: -1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tranding-slider-control .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+  }
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+}
+
+.tranding-slider-control .slider-arrow {
+  background: var(--white);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #222224;
+}
+
+.tranding-slider-control .slider-arrow::after {
+  content: '';
+}
+
+.tranding-slider-control .swiper-pagination {
+  position: relative;
+  width: 15rem;
+  bottom: 1rem;
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgb(97, 135, 232));
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+
+/*-----------------------------------*\
+  #DELIVERY
+\*-----------------------------------*/
+
+.delivery-content {
+  padding-left: 3rem;
+  margin-block-end: 40px;
+}
+
+.delivery .section-title {
+  max-width: 17ch;
+  line-height: 1.6;
+  letter-spacing: -2px;
+  color: #222224;
+}
+
+.delivery .section-text {
+  margin-block: 15px 25px;
+}
+
+.delivery-banner {
+  position: relative;
+  aspect-ratio: 1 / 0.86;
+}
+
+.delivery-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-80px);
+  transition: var(--transition-2);
+}
+
+.delivery {
+  background-color: #f9f6ef;
+
+}
+
+
+
+/* .icon-small {
+  color: #e67e22;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  font: 120%;
+  /* secrets to align text and icons 
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 10px;
+} */
+
+/*-----------------------------------*\
+  #BANNER
+\*-----------------------------------*/
+
+.banner {
+  color: var(--white);
+}
+
+.banner-list {
+  display: grid;
+  gap: 10px;
+}
+
+.banner-lg {
+  height: 430px;
+}
+
+.banner-sm {
+  height: 200px;
+}
+
+.banner-md {
+  height: 240px;
+}
+
+.banner-card {
+  position: relative;
+  height: 100%;
+  box-shadow: var(--shadow-2);
+  overflow: hidden;
+}
+
+.banner-card .banner-img {
+  background-color: var(--gainsboro);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: var(--transition-2);
+}
+
+.banner-card:is(:hover, :focus-within) .banner-img {
+  transform: scale(1.05);
+}
+
+.banner-item-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  right: 20px;
+  max-height: calc(100% - 30px);
+}
+
+.banner-md .banner-item-content {
+  left: 50%;
+}
+
+.banner-subtitle,
+.banner-title {
+  font-family: var(--ff-rubik);
+  font-weight: var(--fw-600);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.banner-lg .banner-subtitle {
+  font-size: var(--fs-2);
+  margin-block-end: 10px;
+}
+
+.banner-lg .banner-title {
+  font-size: var(--fs-1);
+  max-width: 20ch;
+}
+
+:is(.banner-md, .banner-sm) .banner-title {
+  font-size: var(--fs-2);
+  max-width: 12ch;
+}
+
+.banner-card .banner-text {
+  margin-block: 10px 15px;
+}
+
+.banner-card .btn {
+  --bg-color: var(--dark-orange);
+  --height: 40px;
+  --padding-inline: 25px;
+}
+
+.banner-card .btn:is(:hover, :focus) {
+  background-color: var(--rich-black-fogra-29);
+}
+
+
+/*-----------------------------------*\
+  #TESTIMONIALS
+\*-----------------------------------*/
+
+.testi {
+  text-align: center;
+}
+
+.testi .section-title {
+  margin-block: 10px 20px;
+}
+
+.testi .section-text {
+  max-width: 44ch;
+  margin-inline: auto;
+  margin-block-end: 30px;
+}
+
+.testi-card {
+  background-color: var(--white);
+  padding: 40px;
+  text-align: left;
+  box-shadow: var(--shadow-2);
+}
+
+.testi-card .profile-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testi-card .avatar {
+  min-width: max-content;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testi-card .testi-name {
+  margin-block-end: 2px;
+}
+
+.testi-card .testi-title {
+  font-family: var(--ff-rubik);
+  font-size: var(--fs-4);
+}
+
+.testi-card .testi-text {
+  margin-block: 20px 15px;
+}
+
+.testi-item {
+  min-width: 100%;
+  scroll-snap-align: start;
+}
+
+
+.section-cities {
+  color: white;
+  width: 100%;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* justify-content: center; */
+}
+
+.city-heading {
+  margin-bottom: 3rem;
+}
+
+.restaurant-cities {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
+}
+
+.each-city {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.city_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.city_img img {
+  width: 30rem;
+  height: 20rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+}
+
+@media(max-width:769px) {
+  .restaurant-cities {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}

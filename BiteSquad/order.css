@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2%;
+    background-color: black;
+    color: white;
+}
+
+.sidebar-menus {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-menus a,
+.sidebar-logout a {
+    padding: 5% 8%;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    text-decoration: none;
+    color: beige;
+}
+
+.sidebar-menus a ion.icon,
+.sidebar-logout a ion.icon {
+    font-size: 20px;
+}
+
+.sidebar-menus a:hover,
+.sidebar-logout a:hover {
+    background-color: aqua;
+    border-radius: 50px;
+}
+
+
+.main {
+    width: 100%;
+    height: max-content;
+    min-height: 100vh;
+    padding: 2%;
+    background-color: rgb(249, 245, 249);
+    margin-left: 250px;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toogle {
+    display: none;
+}
+
+
+.search {
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.search input {
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.search-btn {
+    background-color: rgb(248, 199, 3);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.search:hover {
+    box-shadow: rgb(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.search-btn:hover {
+    background-color: black;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cart,
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.main-highlight {
+    margin: 3% 0;
+    padding: 2%;
+    background-color: rgb(248, 199, 3);
+    border-radius: 8px;
+
+}
+
+.main-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 20px;
+
+}
+
+.main-arrow {
+    font-size: 24px;
+}
+
+.back,
+.next {
+    cursor: pointer;
+}
+
+.back:hover,
+.next:hover {
+    color: rgb(123, 124, 208);
+}
+
+.highlight-wrapper {
+    width: 100%;
+    display: flex;
+    padding: 1%;
+    border-radius: 8px;
+    gap: 1.5rem;
+    overflow-x: hidden;
+}
+
+.highlight-card {
+    display: flex;
+    flex-direction: row;
+    min-width: 200px;
+    width: 80%;
+    height: 100%;
+    gap: 1rem;
+    border-radius: 8px;
+    padding: 1%;
+    background-color: grey;
+    cursor: pointer;
+}
+
+.highlight-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.highlight-desc h4 {
+    color: black;
+
+}
+
+.highlight-desc p {
+    color: rgb(0, 0, 0);
+}
+
+.highlight-card:hover {
+    background-color: white;
+    box-shadow: rgba(176, 176, 176);
+}
